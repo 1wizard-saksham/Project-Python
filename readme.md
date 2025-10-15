@@ -51,3 +51,56 @@ It combines **speech recognition**, **API integrations**, and **OpenAI’s conve
    ```bash
    git clone https://github.com/yourusername/voice-desktop-assistant.git
    cd voice-desktop-assistant
+
+2. **Install dependencies:**
+   ```bash
+   pip install openai newsapi-python SpeechRecognition requests
+
+
+3. **Add your API keys:**
+* Create a file called keys.py
+  ```python
+   apikey = "Insert your api key here"
+* Replace 'Insert your api key here' inside getNews() with your OpenAI API key.
+* Also, replace this with your News api key
+  
+  ```python
+  newsapi = NewsApiClient(api_key='Insert your api key here')
+
+4. **Run the assistant:**
+
+python main.py
+
+## 🧠 Example Commands
+| Voice Command                                  | Action                        |
+| ---------------------------------------------- | ----------------------------- |
+| “Open YouTube”                                 | Opens YouTube in browser      |
+| “Play music”                                   | Plays a local song file       |
+| “What’s the weather in New York”               | Fetches and reports weather   |
+| “Show me news today”                           | Lists top news headlines      |
+| “Write an email using artificial intelligence” | Uses GPT to generate an email |
+| “What time is it”                              | Speaks the current time       |
+| “Exit”                                         | Closes the program            |
+
+
+## 📄 File Structure
+.
+├── assistant.py # Main assistant script
+├── keys.py # Stores your OpenAI API key
+├── OpenAI/ # Folder where GPT responses are saved
+└── README.md
+
+## 🧠 Future Improvements
+
+* 🎶 Add YouTube or Spotify API integration for song playback
+
+* 🌍 Dynamic weather and news by voice input
+
+* 💬 Continuous conversation context memory
+
+* 🎛 GUI version for better visualization
+
+🧑‍💻 Author
+
+Saksham Dhakal
+Built with Python, APIs, and curiosity 🔥
